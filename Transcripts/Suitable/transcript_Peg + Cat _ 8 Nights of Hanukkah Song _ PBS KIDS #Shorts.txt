@@ -1,0 +1,3 @@
+'Hanukkah oh, Hanukkah!', "It's time to celebrate.", 'Hanukkah oh Hanukkah! It’s starting off now. Great!', 'Hanukkah goes On-ukkah so many days straight!', 'One, two, three, four,
+five, six, seven, eight.', 'One holiday for eight days.', "It's like a holiday
+day, day, day, day, day, day, day.", 'What’s this object, Peg’s genius friend Al?', 'A special candle holder', 'called a Menorah, and you can call me Just Al!', 'Thanks! Peg’s genius friend, Just Al!', 'What’s a menorah for-ah?', 'Eight nights in a row', 'it holds the candles that we light! First night, one second night two, third night 3?', "That's right.", 'Fourth, fifth, sixth, and seven', 'Now’s the eighth and final night!', 'When all 8 candles burn at once, they glow so bright!'

@@ -1,0 +1,5 @@
+'♪♪', '[layered harmonies]
+♪ It’s a beautiful day ♪', '[layered harmonies]
+♪ Would you be mine ♪', '[layered harmonies]
+♪ Could you be mine ♪', "♪ It's a beautiful day in this neighborhood ♪", '♪ A beautiful day for a neighbor ♪', '♪ Would you be mine ♪', '♪ Could you be mine ♪', '♪ It’s a neighborly day in this beautywood ♪', '♪ A neighborly day for a beauty ♪', '♪ Would you be mine ♪', '♪ Could you be mine ♪', '♪ I have always wanted to have a neighbor ♪', '♪ Just like you ♪', '♪ I’ve always wanted to live in a neighborhood ♪', '♪ With you ♪', "♪ So let's make the most of this beautiful day ♪", '♪ La la la la ♪', '♪ Since we’re together we might as well say ♪', '♪ Would you be mine ♪', '♪ Could you be mine ♪', '♪ Won’t you be my neighbor ♪', '♪ Won’t you please ♪', '♪ Won’t you please ♪', "♪ Please won't you be ♪", '♪ My neighbor ♪', 'Hi neighbor!', 'ALL:
+Welcome!', 'To this neighborhood!', '[dinging]'
