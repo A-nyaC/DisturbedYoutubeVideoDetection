@@ -20,7 +20,7 @@ by Bianca Ortega , A’nya Carr , Andrea Balcacer
 
 ## Summary
 
-This program uses Supervised Image Classification and NLP to analayze and assess whether a Youtube Video is suitable for children based on Image Captures and Video Subtitles.
+This program uses Supervised Image Classification and NLP to analayze and assess whether a Youtube Video is suitable for children based on Image Captures and Video Subtitles. We investigated these two approaches and set up implementation of a combined apporach using OpenAI CLIP.
 
 We recognize that more children are using the internet, often times not fully under supervision. Without guidance, children can be exposed to inappropriate and disturbing media that can affect their emotional state, feeling of safety and more. Youtube is a large-scale platform that contains various kinds of videos and due to its global popularity, children enjoy this app. The danger lies in how well the app does that protecting children from their adult and potentially harmful content, with multiple studies finding more disturbing videos circulating the app's children genre.
 
@@ -45,6 +45,12 @@ We recognize that more children are using the internet, often times not fully un
   - Youtube Video Links, Title, and Captions extracted from Youtube Videos using Youtube Data API
  
   - Video Links were extracted from community flagged Youtube Channels with disturbed/ inapporiate content and appropriate content for children using Youtube Data API. Some limitations were that we did not include many Youtube Shorts as many of them did not have captions and some had a different link layout than full videos. Some links deactivated during the process, making them unusable. We stuck to 50 videos, 25 for each class as to gather alot of data but also conserve Google storage usage. Additonally, to reduce bias, we limited videos we chose from a channel.
+ 
+- ** OpenAI CLIP model**:
+  -   Using a demo Google Colaboratory Notebook from the CLIP GitHub repository, we intended to encode both frames and transcripts and run them through a cosine similarity archi- tecture. This process extends to zero-shot image classification, showcasing the model’s ability to classify images without prior training on particular classes.
+However, it is noteworthy that the model faced challenges in properly capturing all transcripts and frames, resulting in instances where complete pairs were not available for analysis. Due to the newness of this model, and the complexity of the dataset we have created, there are a lot of steps required to format the data into a readable way for the CLIP model.
+
+  - Most of our transcripts size went over a token limit CLIP specified, requiring us to break down the transcripts into chunks for further processing. This limitation affected the overall result generation, as the model’s capacity to derive comprehensive insights was hindered by incomplete data. Despite these challenges, the sections of the dataset successfully processed provide valuable insights into the model’s performance, shedding light on the potential efficacy of the multimodal fusion strategy.
 
 
 ## Visuals
@@ -81,18 +87,23 @@ We recognize that more children are using the internet, often times not fully un
 
 ![image](https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/b4be44ae-1e6c-4e9e-b039-3c7db0ddad9b)
 
+ *CLIP Frame + Transcript Pairing Example
+
+ <img width="720" alt="image" src="https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/5e0158b2-bda6-4cc1-b312-f6f9757a5809">
 
 ## Technologies
-Detail the technologies, languages, frameworks, and tools used in the project.
-- Technology 1
-- Technology 2
-- Technology 3
+- Google Collab
+- Python
+- PyTorch
+- Youtube Data API, Youtube Transcript API
+- OpenAI CLIP
+- https://www.youtube.com/watch?v=SwSbnmqk3zY
 
 ## What I Learned
 Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.
-- **Skill or Concept 1**: How you applied it in the project.
-- **Skill or Concept 2**: Challenges you overcame.
-- **Skill or Concept 3**: Any particular achievements or insights.
+- **Dataset Creation**: I experimented with creating a dataset that is balanced. One, we set a time interval to limit how many frames we will create, we aimed for 1,000 frames to be used for Machine Learning. I also learned that creating a dataset takes a longer time than coding. The majority of our project was gathering data due to finding a predefined dataset for our project was difficult to find. Nevertheless we were able to analyze using the dataset.
+- **NLP**: I never hsd prior experience with using NLPs and was curious as to how it works. I learned that words/sentences can get broken down into tokens, specialized and reduced data, to be utilized in NLP Model. Then it can be used similarly in training. Additionally, this process showed me the uses of softmax, disabling nodes for the model to work harder to retain relevant data.
+- **APIs**: I learned how to access data of an API that stores its data in a Object type, generating an API Key and navigating Object type data. This has made future projects using APIs and accessing their data easier to pick up on.
 
 ## Setup and Installation
 *Provide a clear, step-by-step guide to set up the project locally.*
@@ -100,12 +111,7 @@ Highlight specific skills or concepts you learned or improved upon while working
 2. Open YoutubeDisturbedClassifictionProject.ipynb
 3. Insert Google API Key in the file
 
-
-## Usage
-*Guide on how to use the project, include example commands or scripts.*
-
-
-
+   
 ## Code Examples
 
 # Extracting Transcripts Excerpt:
@@ -136,7 +142,7 @@ for video_id in suitableVideoLinks:
 print("How many SuitableVideos have transcripts : ",len(suitableTranscripts))
 ```
 
-# Open the video capture
+# Making Frames from a video
 ```
                 capture = cv2.VideoCapture(video_path)
 
@@ -151,17 +157,9 @@ print("How many SuitableVideos have transcripts : ",len(suitableTranscripts))
 
 ```
 
-## How to Contribute
-*Encourage contributions and provide guidelines for how others can help.*
-
-## License
-*State the license under which your project is available.*
-
 ## Contact
-- *First and last name* - *Email address*
-- *Any other contact information*
-
-## Acknowledgments
-*Credits to individuals or resources that helped you during the project.*
+- Bianca Ortega- https://www.linkedin.com/in/bianca-m-ortega?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app :Image Classification, NLP Specialist, Dataset Creation, Debugging, Project Management
+- A’nya Carr- https://www.linkedin.com/in/a-nya-carr-180415210/ :Image Classification, NLP, Dataset Creation, Data Extraction, Debugging
+- Andrea Balcacer- https://www.linkedin.com/in/andreabalcacer?trk=public_profile_browsemap-profile :Image Classification, Dataset Creation, Organization, Data Extraction and Storage, Documentation
 
 ---
