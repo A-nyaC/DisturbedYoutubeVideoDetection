@@ -158,8 +158,11 @@ print("How many SuitableVideos have transcripts : ",len(suitableTranscripts))
 ```
 
 ## Contact
-- Bianca Ortega- https://www.linkedin.com/in/bianca-m-ortega?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app :Image Classification, NLP Specialist, Dataset Creation, Debugging, Project Management
-- A’nya Carr- https://www.linkedin.com/in/a-nya-carr-180415210/ :Image Classification, NLP, Dataset Creation, Data Extraction, Debugging
-- Andrea Balcacer- https://www.linkedin.com/in/andreabalcacer?trk=public_profile_browsemap-profile :Image Classification, Dataset Creation, Organization, Data Extraction and Storage, Documentation
+- Bianca Ortega- https://www.linkedin.com/in/bianca-m-ortega?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+  :Image Classification, NLP Specialist, Dataset Creation, Debugging, Project Management
+- A’nya Carr- https://www.linkedin.com/in/a-nya-carr-180415210/
+  :Image Classification, NLP, Dataset Creation, Data Extraction, Debugging
+- Andrea Balcacer- https://www.linkedin.com/in/andreabalcacer?trk=public_profile_browsemap-profile
+  :Image Classification, Dataset Creation, Organization, Data Extraction and Storage, Documentation
 
 ---
