@@ -109,7 +109,7 @@ Highlight specific skills or concepts you learned or improved upon while working
 ## Code Examples
 
 # Extracting Transcripts Excerpt:
-
+```
 suitableVideoLinks = ['STf0Y51cEEc', 'ziTeTAQhyo4', 'x5RbKDaRkjM', 'GOkYIggSZqM', 'PJ57DuxwBn4', 'JSha_1TOvC0', 'IopViQfSSn0', '0PVebbCBSlk', 'YbvCmKvnwRs', 'lSMjQn3iBng']
 suitableTranscripts = []
 for video_id in suitableVideoLinks:
@@ -147,7 +147,7 @@ print("How many SuitableVideos have transcripts : ",len(suitableTranscripts))
                 elif subfolder == 'Disturbed':
                     frame_interval = int(30 * fps)  # Create frames every 30 seconds
 
-
+```
 
 ## How to Contribute
 *Encourage contributions and provide guidelines for how others can help.*
