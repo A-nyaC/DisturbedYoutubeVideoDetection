@@ -56,15 +56,14 @@ We recognize that more children are using the internet, often times not fully un
 *Example of Suitable Frame*
 ![image](https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/88bf8532-cf63-4e8f-a312-5e3769915569)
 
-*Example of Disturbed Words*
+*Example of Disturbed Words and Frame*
 
 <details>
   <summary>Warning: Contains Curses,Inapproriate Phrases</summary>
 <img width="179" alt="image" src="https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/fca8df47-a6a4-4a73-819e-9159a714e41e">
-</details>
 
-*Example of Disturbed Frame*
 ![image](https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/3036a2b5-97f0-4668-9c4d-2178f0de6d67)
+</details>
 
 *Example of Suitable Words*
 <img width="96" alt="image" src="https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/c0ac4a00-fff9-4496-a804-42aa641103fc">
