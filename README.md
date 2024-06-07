@@ -40,7 +40,7 @@ We recognize that more children are using the internet, often times not fully un
   - Model: Long Short Term Memory Recurrent Neural Network 
   - Dataset: 50 Video Captions + Keyword Word Bank 616 suitable words + 743 disturbed words
   - Parameters: Cross Entropy loss, dropout: 0.50
-  - 
+  
 - **Video Metadata Extraction**:
   - Youtube Video Links, Title, and Captions extracted from Youtube Videos using Youtube Data API
  
