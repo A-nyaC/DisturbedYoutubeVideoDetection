@@ -27,7 +27,7 @@ We recognize that more children are using the internet, often times not fully un
 
 ## Features
 - **Image Classification**:
-  - Video Frames were extracted from Youtube Videos using PyTorch,PyTube and OpenCv-Python and storing them in a Google Folder. Frames were generated every 17 seconds for Suitable Videos, 30 seconds for Disturbed due to the Suitable Videos video duration were generally shorter than the Disturbed Videos
+  - Video Frames were extracted from Youtube Videos using PyTorch,PyTube and OpenCv-Python and storing them in a Google Folder. Frames were generated every 17 seconds for Suitable Videos, 30 seconds for Disturbed due to the Suitable Videos video duration were generally shorter than the Disturbed Videos.
     
   - Model: VGG-16
   - Dataset: 1,945 Frames Total= 829 suitable + 1,115 disturbed
@@ -57,9 +57,9 @@ We recognize that more children are using the internet, often times not fully un
 ![image](https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/88bf8532-cf63-4e8f-a312-5e3769915569)
 
 *Example of Disturbed Words*
+
 <details>
   <summary>Warning: Contains Curses,Inapproriate Phrases</summary>
-
 <img width="179" alt="image" src="https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/fca8df47-a6a4-4a73-819e-9159a714e41e">
 </details>
 
@@ -71,6 +71,7 @@ We recognize that more children are using the internet, often times not fully un
 
 *Suitable/Disturbed Word in Caption LSTM Confusion Matrix*
 ![image](https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/aa4e2be0-8972-4d84-a682-ba914f39be9b)
+
 ![image](https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/f419a57d-3ace-4205-839c-41f62a2e30e3)
 
 *Classifying Images from Suitable and Disturbed Frames VGG16 Confusion Matrix and Graphs* 
@@ -80,18 +81,6 @@ We recognize that more children are using the internet, often times not fully un
 ![image](https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/f57e0e93-c554-47e3-9f54-00c5d0ec1443)
 
 ![image](https://github.com/A-nyaC/DisturbedYoutubeVideoDetection/assets/171085427/b4be44ae-1e6c-4e9e-b039-3c7db0ddad9b)
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Technologies
