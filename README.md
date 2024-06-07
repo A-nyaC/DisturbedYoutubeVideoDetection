@@ -108,9 +108,9 @@ Highlight specific skills or concepts you learned or improved upon while working
 
 ## Setup and Installation
 *Provide a clear, step-by-step guide to set up the project locally.*
-1. Clone the repo: `git clone [URL]`
-2. Install dependencies: `[Example Command]`
-3. Additional steps...
+1. Get a Google API Key
+2. Open 
+
 
 ## Usage
 *Guide on how to use the project, include example commands or scripts.*
