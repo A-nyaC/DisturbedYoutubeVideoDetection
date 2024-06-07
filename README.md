@@ -35,7 +35,7 @@ We recognize that more children are using the internet, often times not fully un
   - Classes: 0 (Disturbed) , 1 ( Suitable)
   
 - **Natural Language Processing**:
-  - Captions were extracted from Youtube video using Youtube Data API, stored in a Google Folder and accessed through Google Collaboratory. Some limitations were that some videos were excluded that did not have captions avaliable due to: *No captions were set by Creator, Disabled, No English Captions Avaliable, Incomprehenisble Words and other cases*. The captions were ran through an LSTM model that would give us a percentage of how many words in the transcript belonged to the classes: Suitable, Disturbed. Word Bank was compiled by using a list of Youtube flagged words and ChatGPT generated Safe words for children.
+  - Captions were extracted from Youtube video using Youtube Data API and Youtube Transcript API, stored in a Google Folder and accessed through Google Collaboratory. Some limitations were that some videos were excluded that did not have captions avaliable due to: *No captions were set by Creator, Disabled, No English Captions Avaliable, Incomprehenisble Words and other cases*. The captions were ran through an LSTM model that would give us a percentage of how many words in the transcript belonged to the classes: Suitable, Disturbed. Word Bank was compiled by using a list of Youtube flagged words and ChatGPT generated Safe words for children.
     
   - Model: Long Short Term Memory Recurrent Neural Network 
   - Dataset: 50 Video Captions + Keyword Word Bank 616 suitable words + 743 disturbed words
@@ -109,14 +109,57 @@ Highlight specific skills or concepts you learned or improved upon while working
 ## Setup and Installation
 *Provide a clear, step-by-step guide to set up the project locally.*
 1. Get a Google API Key
-2. Open 
+2. Open YoutubeDisturbedClassifictionProject.ipynb
+3. Insert Google API Key in the file
 
 
 ## Usage
 *Guide on how to use the project, include example commands or scripts.*
 
+
+
 ## Code Examples
-*Show small, but significant snippets of code from your project.*
+
+# Extracting Transcripts Excerpt:
+
+suitableVideoLinks = ['STf0Y51cEEc', 'ziTeTAQhyo4', 'x5RbKDaRkjM', 'GOkYIggSZqM', 'PJ57DuxwBn4', 'JSha_1TOvC0', 'IopViQfSSn0', '0PVebbCBSlk', 'YbvCmKvnwRs', 'lSMjQn3iBng']
+suitableTranscripts = []
+for video_id in suitableVideoLinks:
+    try:
+      transcript = YouTubeTranscriptApi.get_transcript(video_id)
+
+      if transcript:
+        text_list = [entry['text'] for entry in transcript]
+        suitableTranscripts.append(text_list)
+        print("https://www.youtube.com/watch?v="+video_id)
+    except (
+                VideoUnavailable,
+                TooManyRequests,
+                YouTubeRequestFailed,
+                NoTranscriptFound,
+                TranscriptsDisabled,
+                NotTranslatable,
+                TranslationLanguageNotAvailable,
+                NoTranscriptAvailable,
+                FailedToCreateConsentCookie,
+                InvalidVideoId,
+                ) as e:
+                print("No transcript available for video:", video_id)
+print("How many SuitableVideos have transcripts : ",len(suitableTranscripts))
+
+# Open the video capture
+                capture = cv2.VideoCapture(video_path)
+
+                # Get the frames per second (fps) of the video
+                fps = capture.get(cv2.CAP_PROP_FPS)
+
+                # Calculate the frame interval based on the video category
+                if subfolder == 'Suitable':
+                    frame_interval = int(17 * fps)  # Create frames every 17 seconds
+                elif subfolder == 'Disturbed':
+                    frame_interval = int(30 * fps)  # Create frames every 30 seconds
+
+
 
 ## How to Contribute
 *Encourage contributions and provide guidelines for how others can help.*
