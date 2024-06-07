@@ -102,7 +102,7 @@ However, it is noteworthy that the model faced challenges in properly capturing 
 ## What I Learned
 Highlight specific skills or concepts you learned or improved upon while working on this project. This section should directly address potential employer interests.
 - **Dataset Creation**: I experimented with creating a dataset that is balanced. One, we set a time interval to limit how many frames we will create, we aimed for 1,000 frames to be used for Machine Learning. I also learned that creating a dataset takes a longer time than coding. The majority of our project was gathering data due to finding a predefined dataset for our project was difficult to find. Nevertheless we were able to analyze using the dataset.
-- **NLP**: I never hsd prior experience with using NLPs and was curious as to how it works. I learned that words/sentences can get broken down into tokens, specialized and reduced data, to be utilized in NLP Model. Then it can be used similarly in training. Additionally, this process showed me the uses of softmax, disabling nodes for the model to work harder to retain relevant data.
+- **NLP**: I never had prior experience with using NLPs and was curious as to how it works. I learned that words/sentences can get broken down into tokens, specialized and reduced data, to be utilized in NLP Model. Then it can be used similarly in training. Additionally, this process showed me the uses of softmax, disabling nodes for the model to work harder to retain relevant data.
 - **APIs**: I learned how to access data of an API that stores its data in a Object type, generating an API Key and navigating Object type data. This has made future projects using APIs and accessing their data easier to pick up on.
 
 ## Setup and Installation
