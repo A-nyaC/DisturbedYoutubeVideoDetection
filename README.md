@@ -134,8 +134,10 @@ for video_id in suitableVideoLinks:
                 ) as e:
                 print("No transcript available for video:", video_id)
 print("How many SuitableVideos have transcripts : ",len(suitableTranscripts))
+```
 
 # Open the video capture
+```
                 capture = cv2.VideoCapture(video_path)
 
                 # Get the frames per second (fps) of the video
