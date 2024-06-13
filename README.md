@@ -20,7 +20,7 @@ by Bianca Ortega , A’nya Carr , Andrea Balcacer
 
 ## Summary
 
-This program uses Supervised Image Classification and NLP to analayze and assess whether a Youtube Video is suitable for children based on Image Captures and Video Subtitles. We investigated these two approaches and set up implementation of a combined apporach using OpenAI CLIP.
+This program uses Supervised Image Classification and NLP to analyze and assess whether a Youtube Video is suitable for children based on Image Captures and Video Subtitles. We investigated these two approaches and set up implementation of a combined apporach using OpenAI CLIP.
 
 We recognize that more children are using the internet, often times not fully under supervision. Without guidance, children can be exposed to inappropriate and disturbing media that can affect their emotional state, feeling of safety and more. Youtube is a large-scale platform that contains various kinds of videos and due to its global popularity, children enjoy this app. The danger lies in how well the app does that protecting children from their adult and potentially harmful content, with multiple studies finding more disturbing videos circulating the app's children genre.
 
